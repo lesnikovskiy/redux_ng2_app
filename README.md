@@ -1,4 +1,7 @@
-# CourseLibrary
+# Course tracker
+
+This is an existing project that is used to move to Redux.
+The repository for [Redux Dev Tools](https://github.com/zalmoxisus/redux-devtools-extension) should be used to install tools.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.31.
 
