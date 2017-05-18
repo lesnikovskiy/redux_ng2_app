@@ -23,23 +23,6 @@ import { store, IAppState } from "./store";
 import { NgRedux, NgReduxModule } from 'ng2-redux';
 import { CourseActions } from "./courses/course.actions";
 
-function deepFreeze(o) {
-  Object.freeze(o);
-
-  Object.getOwnPropertyNames(o).forEach(prop => {
-    if (
-      o.hasOwnProperty(prop)
-      && o[prop] != null
-      && typeof o[prop] === 'object'
-      && !Object.isFrozen(o[prop])
-    ) {
-      deepFreeze(o[prop]);
-    }
-  });
-
-  return o;
-}
-
 @NgModule({
   declarations: [
     AppComponent,
